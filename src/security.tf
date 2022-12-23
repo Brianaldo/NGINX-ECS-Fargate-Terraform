@@ -19,7 +19,7 @@ resource "aws_security_group" "load_balancer" {
 }
 
 resource "aws_security_group" "ecs_tasks" {
-  name        = "myapp-ecs-tasks-security-group"
+  name        = "app-ecs-tasks-security-group"
   description = "allow inbound access from the ALB only"
   vpc_id      = aws_vpc.main.id
 

@@ -10,8 +10,8 @@ terraform {
 }
 
 variable "path_to_credentials_file" {
-    description = "Credentials file for AWS"
-    default     = ["./.aws/credentials"]
+  description = "Credentials file for AWS"
+  default     = ["./.aws/credentials"]
 }
 
 variable "credential_profile" {
@@ -26,7 +26,7 @@ variable "aws_region" {
 
 variable "ecs_task_execution_role_name" {
   description = "ECS task execution role name"
-  default = "ecs_task_execution_role"
+  default     = "ecs_task_execution_role"
 }
 
 variable "az_count" {
@@ -46,7 +46,7 @@ variable "app_port" {
 
 variable "app_count" {
   description = "Number of docker containers to run"
-  default     = 3
+  default     = 1
 }
 
 variable "health_check_path" {
